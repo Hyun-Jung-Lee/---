@@ -1,0 +1,4 @@
+Given an array, and a target number;
+Find how many pairs numbers the value will be target.
+Methods one: sort array first. Then from left and right to test the value of left + right
+Mehods two: without sort array, add a new dict, then loop the array, if diff beween target and n not in the dict, add n to the dict.
