@@ -1,0 +1,13 @@
+Two slightly different questions:
+
+1 Permute pairs of Female and Male 
+# F: Female; M: Male
+# Input n - paris of females and males
+# Output a list of all combinations
+
+
+2 Permute pairs of "(" ")"
+# It will be simliar to above question, 
+# except add one more Restriction: Female first, total number of Females seated must be larger than total Males seated
+
+Solution use DFS methods.
