@@ -11,3 +11,5 @@ Two slightly different questions:
 # except add one more Restriction: Female first, total number of Females seated must be larger than total Males seated
 
 Solution use DFS methods.
+
+
