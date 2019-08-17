@@ -56,6 +56,44 @@ namespace Alg5Permute
             if (fc < n) DFSParenth(n, fc + 1, mc, solution + "(");//if fc less than n, add one more female to arrange
             if (mc < fc) DFSParenth(n, fc, mc + 1, solution + ")");//mc always <= fc
         }
+        
+        
+        /*-----------------------------------------------------------*/
+        //Another way, generate all parenthese first, then valid the corret pairs.
+        //whenever, "(" > "(", remove this soluion.
+        public List<String> Valid(List<String> originalResult)
+        {
+            List<String> copyResult = new List<String>();//Create a list to deep copy origianlResult
+            foreach(var i in originalResult)
+            {
+                copyResult.Add(i);
+            }
+
+            var balance = 0;
+            Boolean rm;
+            List<String> rmList = new List<String>();// Create a list to record removed data location                       
+
+            foreach (var i in copyResult)
+            {
+                rm = false;
+                foreach (char c in i)
+                {
+                    if (c == 'F') balance++;
+                    if (c == 'M') balance--;
+                    if (balance < 0) rm = true;
+                }
+                if (rm)
+                {
+                    //Console.WriteLine("Need to remove!");
+                    rmList.Add(i);
+                }
+            }  
+            foreach(var m in rmList)
+            {
+                copyResult.Remove(m);
+            }
+            return copyResult;
+        }
 
     }
 }
