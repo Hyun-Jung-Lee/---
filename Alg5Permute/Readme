@@ -6,10 +6,12 @@ Two slightly different questions:
 # Output a list of all combinations
 
 
-2 Permute pairs of "(" ")"
+2 Permute pairs of "(" ")"    Solution use DFS methods.
 # It will be simliar to above question, 
 # except add one more Restriction: Female first, total number of Females seated must be larger than total Males seated
 
-Solution use DFS methods.
 
 
+3 Another solution for paris of  "(" ")"  Solution by valide all possible pairs
+# Generate all the combinations, then valide one by one
+# it is as good as DFS.
