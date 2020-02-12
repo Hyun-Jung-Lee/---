@@ -1,0 +1,9 @@
+give a digits(exclude 0,1 ), for example "213777",
+print all the possilbe letter combination.
+
+Use BFS methods.
+First, build a queue. 
+Then, deque a item, 
+if item euqal digits lenght, meaning we got a combination.
+else, loop the next digits possible letter and combine with dequed item
+add combined new item to the queue.
