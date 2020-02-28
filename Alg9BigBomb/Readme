@@ -1,1 +1,7 @@
+// Give a 2-d array with 0, 1
+// 1 is bomb, 
+// if denote certain position, the bomb will change to 0, and also denote its neighbors
+//find how many bombs left after denote 
 
+//Use BFS to search denote all the bombs
+//Then check how many bombs left
